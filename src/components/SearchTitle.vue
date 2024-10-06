@@ -37,7 +37,7 @@ defineProps<{
 @import "../styles/mixins";
 
 .search-container {
-  width: clamp($unit-80, 100vw, $unit-288);
+  width: clamp($unit-80, 90vw, $unit-288);
   display: flex;
   justify-content: space-between;
 
