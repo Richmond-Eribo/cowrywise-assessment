@@ -83,7 +83,6 @@ onUnmounted(() => {
     position: relative;
     max-width: 95vw;
     width: 100%;
-    // max-height: 80vh;
     background-color: $white;
     border-radius: $border-radius-lg;
     overflow: hidden;
@@ -100,16 +99,12 @@ onUnmounted(() => {
 
   &__image-wrapper {
     position: relative;
-    height: 80vh;
     overflow: hidden;
-    // background-color: $error-text;
   }
 
   &__img {
     width: 100%;
-    height: 100%;
-    // max-height: 60vh;
-    // display: block;
+    max-height: 80%;
     object-fit: cover;
     object-position: center;
   }
