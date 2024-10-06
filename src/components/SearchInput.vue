@@ -63,7 +63,7 @@ const query = defineModel()
   color: $text-secondary;
   overflow: hidden;
   // width: 100%;
-  width: clamp($unit-80, 100vw, $unit-288);
+  width: clamp($unit-80, 90vw, $unit-288);
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.05);
   &__input {
     flex-grow: 1;

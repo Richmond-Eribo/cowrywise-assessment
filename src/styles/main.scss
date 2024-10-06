@@ -37,15 +37,6 @@ a {
   color: $accent-color;
   text-decoration: none;
   transition: color $transition-base;
-
-  &:hover {
-    color: darken($accent-color, 10%);
-  }
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 button {
