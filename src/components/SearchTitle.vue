@@ -42,8 +42,11 @@ defineProps<{
   justify-content: space-between;
 
   &__title {
-    font-size: $font-size-4xl;
+    font-size: $font-size-3xl;
     color: $text-primary;
+    @include respond-to("medium") {
+      font-size: $font-size-4xl;
+    }
   }
   &__param {
     color: $text-secondary;
