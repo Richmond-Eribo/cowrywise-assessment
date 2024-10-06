@@ -1,0 +1,67 @@
+// Colors
+$primary-color: #d1d5db;
+$secondary-color: #9ca3af;
+$accent-color: #052d53;
+$background-color: #f7fafc;
+$text-primary: #1f2937;
+$text-secondary: #718096;
+$white: #ffffff;
+$black: #000000;
+$error-background: #fed7d7;
+$error-text: #9b2c2c;
+$skeleton-color: #b0b3b7;
+$focus-color: #4299e1;
+
+// Base  Units
+$unit-0: 0;
+$unit-0-5: 0.125rem;
+$unit-1: 0.25rem;
+$unit-2: 0.5rem;
+$unit-3: 0.75rem; //12px
+$unit-4: 1rem; //16px
+$unit-9: 2.25rem;
+$unit-10: 2.5rem; // 10px
+$unit-20: 5rem;
+$unit-80: 20rem;
+$unit-96: 24rem;
+$unit-192: 48rem;
+$unit-288: 72rem;
+
+// Spacing
+$spacing-unit: $unit-2;
+$spacing-sm: $spacing-unit;
+$spacing-md: $spacing-unit * 2;
+$spacing-lg: $spacing-unit * 3;
+$spacing-xl: $spacing-unit * 4;
+$spacing-2xl: $spacing-unit * 6;
+
+// Typography
+$font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+$font-size-sm: $unit-3;
+$font-size-base: $unit-4;
+$font-size-lg: 18px;
+$font-size-xl: 20px;
+$font-size-2xl: 24px;
+$font-size-3xl: 30px;
+$font-size-4xl: $unit-10;
+
+// Border
+$border-radius: 8px;
+$border-radius-lg: 12px;
+$border-radius-xl: 18px;
+
+// Breakpoints
+$breakpoints: (
+  "small": 640px,
+  "medium": 768px,
+  "large": 1024px,
+  "xlarge": 1280px,
+);
+
+// Z-index
+$z-index-modal: 99999;
+
+// Transitions
+$transition-base: 0.3s ease-in-out;

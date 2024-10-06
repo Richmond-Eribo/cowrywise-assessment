@@ -1,0 +1,125 @@
+@import "variables";
+@import "mixins";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+// Base
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $text-primary;
+  background-color: $background-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: $spacing-md;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  margin-bottom: $spacing-md;
+}
+
+a {
+  color: $accent-color;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover {
+    color: darken($accent-color, 10%);
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  padding: $spacing-sm $spacing-md;
+  background-color: $accent-color;
+  color: $white;
+  border: none;
+  border-radius: $border-radius;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Utility classes
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $spacing-md;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// Responsive adjustments
+@include respond-to("medium") {
+  body {
+    font-size: $font-size-lg;
+  }
+}
+
+@include respond-to("large") {
+  .container {
+    padding: 0 $spacing-lg;
+  }
+}
